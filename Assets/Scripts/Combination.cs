@@ -16,7 +16,7 @@ public class Combination : MonoBehaviour
         if (digitNumber < 0 || digitNumber >= combination.Count)
             return 0;
         return combination[digitNumber];
-        
+         
     }
 
     public int GetCombinationLength()

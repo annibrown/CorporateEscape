@@ -8,7 +8,6 @@ public class KeypadButton : MonoBehaviour
     
     public void OnClick()
     {
-        print("clicked " + buttonValue);
         keypad.RegisterButtonClick(buttonValue);
     }
 }
