@@ -6,8 +6,10 @@ public class OfficeWorker : MonoBehaviour
     
     public void MoveManually(Vector2 direction)
     {
+        //Move(direction);
         Move(direction);
     }
+    
     private void KeepOnScreen()
     {
         OfficeWorkerSpriteRenderer.transform.position =
@@ -23,6 +25,7 @@ public class OfficeWorker : MonoBehaviour
         float yAmount = GameParameters.OfficeWorkerMoveSpeed * direction.y * Time.deltaTime;
         
         Vector2 moveAmount = new Vector2(xAmount, yAmount);
+        
         OfficeWorkerSpriteRenderer.transform.Translate(moveAmount);
 
         KeepOnScreen();

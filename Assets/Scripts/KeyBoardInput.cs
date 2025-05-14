@@ -6,6 +6,7 @@ public class KeyboardInput : MonoBehaviour
     
     public void Update()
     {
+        
         if (Input.GetKey(KeyCode.W))
         {
             // move up
