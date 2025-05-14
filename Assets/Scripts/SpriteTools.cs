@@ -91,7 +91,7 @@ public static class SpriteTools
     {
         return spriteRenderer.sprite.rect.height / 2;
     }
-    
+    //can be used to have random spawning characters or can remove if not needed later 
     public static Vector3 RandomLocationScreenSpace()
     {
         float randomX = Random.Range(0, Screen.width);

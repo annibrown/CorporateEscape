@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Game-MainRoom.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Start Menu.unity
+    guid: e14e857f6f25cea40a08af7c08eb1453
+  - enabled: 1
+    path: Assets/Scenes/Game-BreakRoom.unity
+    guid: ceb0e74d910bf4c44b38056f9baaadb6
+  - enabled: 1
+    path: Assets/Scenes/Game-Office.unity
+    guid: d35323e539c9854418c6ef69d792f2fa
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
