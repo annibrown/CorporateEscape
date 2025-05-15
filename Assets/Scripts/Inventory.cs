@@ -16,4 +16,9 @@ public class Inventory
         Items.Remove(item);
         item.GetDropped(playerPosition);
     }
+
+    public bool InInventory(Item item)
+    {
+        return Items.Contains(item);
+    }
 }

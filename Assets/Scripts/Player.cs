@@ -46,4 +46,19 @@ public class Player : MonoBehaviour
     {
         inventory.Drop(item, gameObject.transform.position);
     }
+    
+    // On Click Coffee Machine
+    /*private void CoffeeMachine()
+    {
+        if (Inventory.InInventory(coffeeMachine)
+        {
+            // display "yay! you fixed the machine!"
+            // "coffee added to your inventory!"
+            Inventory.Pickup(coffee);
+        }
+        
+    }*/
+
+    
+    
 }
