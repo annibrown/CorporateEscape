@@ -11,9 +11,15 @@ public class Player : MonoBehaviour
 
     private float pickupDistance = 1.0f;
 
+    public GameObject coffee;
+    public GameObject coffeeMachinePiece;
+    private Item coffeeMachinePieceItem;
+
     public void Start()
     {
         inventory = new Inventory();
+        GameObject coffeeCup = Instantiate(coffee, transform.position, Quaternion.identity);
+        
     }
     
     public void Update()
@@ -46,4 +52,28 @@ public class Player : MonoBehaviour
     {
         inventory.Drop(item, gameObject.transform.position);
     }
+    
+    // On Click coffee machine part
+    public void OnClickCoffeeMachinePart()
+    {
+        GameObject pieceObj = Instantiate(coffeeMachinePiece, transform.position, Quaternion.identity);
+        coffeeMachinePieceItem = pieceObj.GetComponent<Item>();
+        inventory.Pickup(coffeeMachinePieceItem);
+    }
+    
+    private void OnClickCoffeeMachine()
+    {
+        if (inventory.InInventory(coffeeMachinePieceItem)
+        {
+            // display "yay! you fixed the machine!"
+            GameObject coffeeObj = Instantiate(coffee, transform.position, Quaternion.identity);
+            Item coffeeItem = coffeeObj.GetComponent<Item>();
+            inventory.Pickup(coffeeItem);
+            // "coffee added to your inventory!"
+        } else
+        {
+            //display "hmm.. the coffee machine seems to be broken.."
+        }
+    }
+    
 }
