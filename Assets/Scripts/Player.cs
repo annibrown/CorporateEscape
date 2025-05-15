@@ -50,13 +50,15 @@ public class Player : MonoBehaviour
     // On Click Coffee Machine
     /*private void CoffeeMachine()
     {
-        if (Inventory.InInventory(coffeeMachine)
+        if (Inventory.InInventory(coffeeMachinePiece)
         {
             // display "yay! you fixed the machine!"
             // "coffee added to your inventory!"
             Inventory.Pickup(coffee);
+        } else
+        {
+            //display "hmm.. the coffee machine seems to be broken.."
         }
-        
     }*/
 
     
