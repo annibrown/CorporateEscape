@@ -70,7 +70,8 @@ public class Player : MonoBehaviour
             Item coffeeItem = coffeeObj.GetComponent<Item>();
             inventory.Pickup(coffeeItem);
             // "coffee added to your inventory!"
-        } else
+        }
+        else
         {
             //display "hmm.. the coffee machine seems to be broken.."
         }
