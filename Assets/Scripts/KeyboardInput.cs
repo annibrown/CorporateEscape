@@ -3,14 +3,8 @@ using UnityEngine;
 public class KeyboardInput : MonoBehaviour
 {
     public OfficeWorker OfficeWorker;
-    public Player Player;
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Player.PickupNearbyItems();
-        }
-        
         if (Input.GetKey(KeyCode.W))
         {
             // move up
