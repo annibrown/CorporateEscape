@@ -63,14 +63,15 @@ public class Player : MonoBehaviour
     
     private void OnClickCoffeeMachine()
     {
-        if (inventory.InInventory(coffeeMachinePieceItem)
+        if (inventory.InInventory(coffeeMachinePieceItem))
         {
             // display "yay! you fixed the machine!"
             GameObject coffeeObj = Instantiate(coffee, transform.position, Quaternion.identity);
             Item coffeeItem = coffeeObj.GetComponent<Item>();
             inventory.Pickup(coffeeItem);
             // "coffee added to your inventory!"
-        } else
+        }
+        else
         {
             //display "hmm.. the coffee machine seems to be broken.."
         }
