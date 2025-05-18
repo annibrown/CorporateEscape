@@ -8,6 +8,16 @@ public class KeyBoardInput : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+
+        if (Player == null)
+        {
+            Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        }
+        if (OfficeWorker == null)
+        {
+            OfficeWorker = GameObject.FindGameObjectWithTag("Player").GetComponent<OfficeWorker>();
+        }
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Player.PickupNearbyItems();
