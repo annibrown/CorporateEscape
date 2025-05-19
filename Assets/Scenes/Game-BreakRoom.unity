@@ -1774,7 +1774,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 839468867}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 981803546}
+        m_TargetAssemblyTypeName: SwitchRooms, Assembly-CSharp
+        m_MethodName: SwitchRoom
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MiniGame-CoffeeMachine
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 981803551}
+        m_TargetAssemblyTypeName: MiniGameCoffeeMachine, Assembly-CSharp
+        m_MethodName: onStartButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &839468867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1997,6 +2021,9 @@ GameObject:
   m_Component:
   - component: {fileID: 981803547}
   - component: {fileID: 981803546}
+  - component: {fileID: 981803549}
+  - component: {fileID: 981803550}
+  - component: {fileID: 981803551}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -2031,6 +2058,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &981803549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981803545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573a1a2f5fcb35e41b2d1c42ba571b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &981803550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981803545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bd272e4b311854bb25a46aaf0221d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &981803551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981803545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 402037c11dd167d48b9109d227c70f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameTimer: {fileID: 981803550}
+  SwitchRooms: {fileID: 981803546}
 --- !u!1 &1006287391
 GameObject:
   m_ObjectHideFlags: 0
@@ -2298,9 +2363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc42a17f165541ff8251d5ab43dd06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 15361349}
-  slotPrefab: {fileID: 5996022809982244250, guid: 0e90c2f4a79184dd4afbaa28df96a009, type: 3}
-  maxSlots: 4
 --- !u!114 &1120126519
 MonoBehaviour:
   m_ObjectHideFlags: 0
