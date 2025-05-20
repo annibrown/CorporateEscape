@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
 
     public void Start()
     {
-        inventory = new Inventory();
+        inventory = FindObjectOfType<Inventory>();
         GameObject coffeeCup = Instantiate(coffee, transform.position, Quaternion.identity);
         
     }

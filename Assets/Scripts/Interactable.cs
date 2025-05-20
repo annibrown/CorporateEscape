@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public abstract class Interactable : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public string interactionPrompt;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // This method will be called when the player interacts with this object
+    public abstract void OnInteract();
 }

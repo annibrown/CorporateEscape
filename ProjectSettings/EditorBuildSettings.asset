@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game-Office.unity
     guid: d35323e539c9854418c6ef69d792f2fa
+  - enabled: 1
+    path: Assets/Scenes/MiniGame-CoffeeMachine.unity
+    guid: 89f10c6b13c6b8545b00f21a5a5620dc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
