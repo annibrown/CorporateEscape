@@ -6,13 +6,20 @@ public class Inventory : MonoBehaviour
 {
     // Event fired whenever the inventory changes
     public event Action OnInventoryChanged;
+    public static Inventory Instance { get; private set; }
 
     private List<Item> items = new List<Item>();
     public IReadOnlyList<Item> Items => items;
 
     private void Awake()
     {
-        // nothing else needed here yet
+        DontDestroyOnLoad(gameObject); 
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);              // only one allowed
+            return;
+        }
+        Instance = this;
     }
 
     public void Pickup(Item item)
