@@ -1257,6 +1257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameTimer: {fileID: 981803550}
   SwitchRooms: {fileID: 981803546}
+  coffeeItem: {fileID: 2195037837034070516, guid: 2986838d04f094af2918cdcf0cef5402, type: 3}
 --- !u!4 &593487407
 Transform:
   m_ObjectHideFlags: 0

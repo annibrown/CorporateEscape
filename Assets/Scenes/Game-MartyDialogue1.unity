@@ -923,7 +923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1937153578
 Transform:
   m_ObjectHideFlags: 0
@@ -953,9 +953,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mcBubble: {fileID: 999094986}
   mcText: {fileID: 336765773}
-  MartyBubble: {fileID: 1169962256}
-  MartyText: {fileID: 447128299}
-  MartySprite: {fileID: 1398340769}
+  martyBubble: {fileID: 2016838595}
+  martyText: {fileID: 447128299}
   lines:
   - "Oh you want me to talk to Chad for you since we\u2019re pretty close? I\u2019ll
     consider it\u2026 could you get me some coffee first?"

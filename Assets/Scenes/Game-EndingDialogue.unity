@@ -494,6 +494,7 @@ MonoBehaviour:
   - "Chad told me you have a corgi birthday party later. Why didn\u2019t you just
     say that, I have a corgi too! I suppose you can leave now, but I better see those
     deliverables by tomorrow."
+  - 'Yay I can leave now! '
 --- !u!4 &814220223
 Transform:
   m_ObjectHideFlags: 0
@@ -1089,7 +1090,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'Yay I can leave now! '
 --- !u!222 &1914590527
 CanvasRenderer:
   m_ObjectHideFlags: 0

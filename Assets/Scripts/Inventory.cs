@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -24,9 +25,15 @@ public class Inventory : MonoBehaviour
 
     public void Pickup(Item item)
     {
-        items.Add(item);
-        item.GetPickedUp();
-        OnInventoryChanged?.Invoke();
+        // items.Add(item);
+        // item.GetPickedUp();
+        // OnInventoryChanged?.Invoke();
+        
+        if (!items.Contains(item))
+        {
+            items.Add(item);
+            OnInventoryChanged?.Invoke();
+        }
     }
 
     public void Drop(Item item, Vector3 playerPosition)

@@ -316,7 +316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &691637807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,9 +331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mcBubble: {fileID: 985897264}
   mcText: {fileID: 336713831}
-  MartyBubble: {fileID: 1523342668}
-  MartyText: {fileID: 1604729282}
-  MartySprite: {fileID: 852711459}
+  martyBubble: {fileID: 1908174979}
+  martyText: {fileID: 1604729282}
   lines:
   - I confirmed your PTO.
   - Alright let me talk to Chad.

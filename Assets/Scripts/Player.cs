@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
 
     public void PickupNearbyItems()
     {
+        /*
         List<GameObject> itemObjects = GameObject.FindGameObjectsWithTag("Item").ToList();
         
         List<Item> nearbyItems = new List<Item>();
@@ -46,6 +47,7 @@ public class Player : MonoBehaviour
                 inventory.Pickup(item);
             }
         }
+        */
     }
 
     public void DropItem(Item item)

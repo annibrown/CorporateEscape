@@ -7,9 +7,8 @@ public class MartyDialogue : MonoBehaviour
     public GameObject mcBubble;
     public Text mcText;
     
-    public GameObject MartyBubble;
-    public Text MartyText;
-    public GameObject MartySprite;
+    public GameObject martyBubble;
+    public Text martyText;
 
     public string[] lines;
 
@@ -36,24 +35,19 @@ public class MartyDialogue : MonoBehaviour
 
     void ShowLine()
     {
-        if (currentLine == lines.Length - 1)
-        {
-            MartySprite.SetActive(false);
-        }
-        
-        bool mcTurn = (currentLine % 2 == 0);
+        bool martyTurn = (currentLine % 2 == 0);
 
-        if (mcTurn)
+        if (martyTurn)
         {
-            mcBubble.SetActive(true);
-            MartyBubble.SetActive(false);
+            mcBubble.SetActive(false);
+            martyBubble.SetActive(true);
             mcText.text = lines[currentLine];
         }
         else
         {
-            mcBubble.SetActive(false);
-            MartyBubble.SetActive(true);
-            MartyText.text = lines[currentLine];
+            mcBubble.SetActive(true);
+            martyBubble.SetActive(false);
+            martyText.text = lines[currentLine];
         }
     }
 }
