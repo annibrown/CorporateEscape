@@ -132,9 +132,10 @@ GameObject:
   - component: {fileID: 14662294}
   - component: {fileID: 14662293}
   - component: {fileID: 14662297}
+  - component: {fileID: 14662298}
   m_Layer: 5
   m_Name: Canvas-Inventory
-  m_TagString: Untagged
+  m_TagString: InventoryBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,6 +235,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 573a1a2f5fcb35e41b2d1c42ba571b4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!225 &14662298
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14662292}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &41831042
 GameObject:
   m_ObjectHideFlags: 0
@@ -3371,14 +3384,14 @@ RectTransform:
   m_GameObject: {fileID: 1341085174}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.010691671, y: 0.010691671, z: 0.010691671}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1883718033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2298.4946, y: -7530.949}
+  m_AnchoredPosition: {x: -34.3, y: 60.1}
   m_SizeDelta: {x: 40, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1341085176
@@ -3438,7 +3451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
+  m_Color: {r: 0.8050314, g: 0.088603996, b: 0.088603996, a: 0.9843137}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

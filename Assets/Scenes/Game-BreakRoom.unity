@@ -1226,53 +1226,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.26, y: 0.16}
   m_EdgeRadius: 0
---- !u!1 &593487405
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 593487407}
-  - component: {fileID: 593487406}
-  m_Layer: 0
-  m_Name: Scripts-CoffeeMiniGame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &593487406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593487405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 402037c11dd167d48b9109d227c70f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameTimer: {fileID: 981803550}
-  SwitchRooms: {fileID: 981803546}
-  coffeeItem: {fileID: 2195037837034070516, guid: 2986838d04f094af2918cdcf0cef5402, type: 3}
---- !u!4 &593487407
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593487405}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &678687532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,7 +1757,7 @@ MonoBehaviour:
           m_StringArgument: MiniGame-CoffeeMachine
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 593487406}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MiniGameCoffeeMachine, Assembly-CSharp
         m_MethodName: onStartButtonClicked
         m_Mode: 1
@@ -4096,4 +4049,3 @@ SceneRoots:
   - {fileID: 1950840085}
   - {fileID: 15361350}
   - {fileID: 1120126521}
-  - {fileID: 593487407}

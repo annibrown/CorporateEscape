@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class RandomObjectPlacer : MonoBehaviour
 {
@@ -10,13 +12,33 @@ public class RandomObjectPlacer : MonoBehaviour
     public float MaximumSecondsToCreate;
     
     private bool isWaitingToCreate = false;
+
+    private bool isRunning = true;
+    
+    private Coroutine coroutine;
     
     void Update()
     {
-        if (!isWaitingToCreate)
+        if (isRunning)
         {
-            StartCoroutine(CountdownUntilCreation());
+            if (!isWaitingToCreate)
+            {
+                coroutine = StartCoroutine(CountdownUntilCreation());
+            }
         }
+    }
+
+    public virtual void Stop()
+    {
+        isRunning = false;
+        if (coroutine != null)
+            StopCoroutine(coroutine);
+    }
+
+    public void Restart()
+    {
+        isWaitingToCreate = false;
+        isRunning = true;
     }
 
     IEnumerator CountdownUntilCreation()

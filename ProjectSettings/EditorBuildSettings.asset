@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game-MartyDialogue1.unity
     guid: f2064e4d59dd6494393693fbf203b408
+  - enabled: 1
+    path: Assets/Scenes/MiniGame-Keypad.unity
+    guid: 7d5fd30061731440e96f85c97bb6e10e
+  - enabled: 1
+    path: Assets/Scenes/MiniGame-Password.unity
+    guid: 5677f29b65cf7ec44b6c81a3f0070d72
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
